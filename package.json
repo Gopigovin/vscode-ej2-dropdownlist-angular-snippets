@@ -1,0 +1,45 @@
+{
+  "name": "ej2-angular-dropdownlist-snippets",
+  "displayName": "ej2-angular-dropdownlist-snippets",
+  "description": "Essential JS 2 dropdownlist component Angular snippets",
+  "version": "0.5.0",
+  "publisher": "Gopigovin",
+  "icon": "images/angular-logo.png",
+  "galleryBanner": {
+    "color": "#0273D4",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gopigovin/vscode-ej2-dropdownlist-angular-snippets.git"
+  },
+  "keywords": [
+    "Angular",
+    "TypeScript",
+    "ej2",
+    "ej2-dropdownlist snippets",
+    "angular dropdownlist"
+  ],
+  "engines": {
+    "vscode": "^1.18.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-merge-json": "latest"
+  },
+  "scripts": {
+    "vscode:prepublish": "gulp merge"
+  }
+}
