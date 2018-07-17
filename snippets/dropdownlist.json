@@ -1,0 +1,60 @@
+{
+    "EJ2 dropdownlist Angular Module": {
+        "prefix": "ej2-dropdownlist-module",
+        "description": "Angular dropdownlist Module",
+        "body": [
+            "import { NgModule } from '@angular/core';",
+            "import { BrowserModule  } from '@angular/platform-browser';",
+            "",
+            "import { ${1:App}Component } from './${2:app}.component';",
+            "import { DropDownListComponent } from '@syncfusion/ej2-ng-dropdowns';",
+            "",
+            "@NgModule({",
+            "\timports: [",
+            "\t\tBrowserModule,",
+            "\t\tDropDownListComponent,",
+            "\t],",
+            "\tdeclarations: [${1:App}Component],",
+            "\tbootstrap: [${1:App}Component],",
+            "})",
+            "export class ${3:App}Module { }",
+            "$0"
+        ]
+    },
+    "EJ2 dropdownlist Angular Component": {
+        "prefix": "ej2-dropdownlist",
+        "description": "Angular DropDownList Component",
+        "body": [
+            "import { Component, OnInit } from '@angular/core';",
+            "",
+            "@Component({",
+            "\tselector: '${1:selector-name}',",
+            "\ttemplateUrl: '${2:name}.component.html'",
+            "})",
+            "",
+            "export class ${3:App}Component implements OnInit {",
+            "\t//Define an array of JSON data",
+            "\tpublic ${4:dataSource}:{ [key: string]: Object }[] = ${5:[]};$0",
+            "}"
+        ]
+    },
+    "EJ2 dropdownlist Angular Component with Inline Template": {
+        "prefix": "ej2-dropdownlist-inline",
+        "description": "Angular dropdownlist Component",
+        "body": [
+            "import { Component, OnInit } from '@angular/core';",
+            "",
+            "@Component({",
+            "\tselector: '${1:selector-name}',",
+            "\ttemplate: `<ejs-dropdownlist id='${2:dropdownlist}' [dataSource]='${3:dataSource}'>",
+            "\t</ejs-dropdownlist>`",
+            "})",
+            "",
+            "export class ${4:App}Component implements OnInit {",
+            "\t//Define an array of JSON data",
+            "\tpublic ${3:dataSource}:{ [key: string]: Object }[] = ${6:[]};",
+            "$0}"
+        ]
+    }
+
+}
